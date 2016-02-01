@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IIFE</title>
+</head>
+<body>
+  <h1>IIFE</h1>
+  <p id="message">This is a message, if you can read this I screwed up.</p>
+  <p id="function">This is a message, if you can read this I screwed up again.</p>
+  <script src="app.js"></script>
+  <script>
+    // just a property/accessor
+    document.getElementById("message").textContent = app.message;
+    // call a function
+    document.getElementById("function").textContent = app.didSomething({name:"Ken", age:"old"});
+  </script>
+</body>
+</html>
